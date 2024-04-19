@@ -1,0 +1,24 @@
+// color vars
+
+:root {
+    --main-color: #1981E2;
+    --second-color: #9b9b9b;
+
+    --main-dark-shade: #212121;
+    --second-dark-shade: #171717;
+    --third-dark-shade: #111;
+    --fourth-dark-shade: #1c1c1c;
+
+    --main-text-color: #fff;
+    --second-text-color: ;
+}
+
+// ----------------- //
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+body{font-family: "Quicksand", sans-serif;}
+// ---------------- //

@@ -1,0 +1,50 @@
+.intro{
+    
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    & h1{
+        width: 100%;
+        position: absolute;
+        left: 50%; top: 40%;
+        transform: translate(-50%, -40%);
+        font-size: 200px;
+        font-weight: 600;
+        text-align: center;
+        color: var(--main-color);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        user-select: none;
+    }
+    &-video{
+        position: absolute;
+        left: 0; bottom: 0;
+        z-index: -1;
+    }
+    &-arrow{
+        position: absolute;
+        cursor: pointer;
+        left: 50%; top: 95%;
+        transform: translate(-50%, -95%);
+        animation: arrow-indicator 1s ease infinite alternate 0s;
+    }
+}
+@keyframes arrow-indicator {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -50px;
+    }
+}
+@media (min-aspect-ratio: 16/9) {
+    .intro-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .intro-video{
+        width: auto;
+        height: 100%;
+    }
+}

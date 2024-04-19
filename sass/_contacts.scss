@@ -1,0 +1,49 @@
+.contacts {
+
+    background: var(--fourth-dark-shade);
+    padding: 100px 0;
+    margin-top: 2%;
+    font-size: 24px;
+    &-map {
+        width: 80vw;
+        height: 600px;
+        margin: 40px auto;
+    }
+    &-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        & section {
+            display: flex;
+            align-items: center; 
+            padding-left: 8%;
+            & span svg path{
+                stroke: var(--main-color);
+            }
+            & a {
+                white-space: nowrap;
+                padding-left: .8%;
+            }
+        }
+    }
+    &-links {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        & section {
+            display: flex;
+            align-items: center; 
+            position: relative;
+            padding-left: 8%;
+            & a {
+                padding-left: .8%;
+                text-decoration: underline
+            }
+            & a:hover{
+                transition: .2s;
+                color: var(--main-color);
+            }
+        }
+    }
+}

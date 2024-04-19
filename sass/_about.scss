@@ -1,0 +1,30 @@
+.about {
+
+    text-align: center;
+    & h2 {
+        font-size: 60px;
+        padding: 6% 0;
+    }
+    & h3 {
+        font-size: 40px;
+        margin-top: 6%;
+    }
+    & p {
+        font-size: 20px;
+    }
+    &-items {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        & section {
+            padding: 0 6%;
+        }
+        & span svg {
+            fill: var(--main-color);
+            width: 150px;
+            height: 150px;
+            margin: 5% 0;
+        } 
+    }
+}
